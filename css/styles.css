@@ -1,0 +1,10 @@
+li.user{
+    color: #fff;
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 400;
+  display: inline-block;
+  font-family: "Anton", sans-serif;
+  position: relative;
+  text-transform: uppercase;
+}
