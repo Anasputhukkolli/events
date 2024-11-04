@@ -22,7 +22,7 @@
     <!-- slider_area_end -->
 
     <!-- performar_area_start  -->
-    <?php
+<?php
 $servername = "localhost";
 $username = "root"; // Your database username
 $password = ""; // Your database password
@@ -57,7 +57,7 @@ $result = $conn->query("SELECT * FROM performers");
                             <div class="col-lg-6 col-md-6">
                                 <div class="single_performer wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
                                     <div data-tilt class="thumb">
-                                        <img src="<?php echo htmlspecialchars($row['image']); ?>" alt="<?php echo htmlspecialchars($row['name']); ?>">
+                                        <img src="<?php echo htmlspecialchars($row['image']); ?>" alt="<?php echo htmlspecialchars($row['name']); ?>" style="max-width: 100%; height: auto;">
                                     </div>
                                     <div class="performer_heading">
                                         <h4><?php echo htmlspecialchars($row['name']); ?></h4>
