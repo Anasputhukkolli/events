@@ -21,24 +21,25 @@ $isLoggedIn = isset($_SESSION['user_id']);
                                 <div class="main-menu  d-none d-lg-block">
                                     <nav>
                                         <ul id="navigation">
-                                            <li><a href="index.html">home</a></li>
-                                            <li><a href="performer.html">Performer</a></li>
+                                            <li><a href="#">home</a></li>
+                                            <li><a href="#about">about</a></li>
+                                            <li><a href="#events">Events <i class="ti-angle-down"></i></a>
+                                                <ul class="submenu">
+                                                    <li><a href="#mecasm">MECASM</a></li>
+                                                    <li><a href="#mecaf">MECAF</a></li>
+                                                    <li><a href="Venue.html">ieee</a></li>
+                                                    <li><a href="elements.html">iedc</a></li>
+                                                </ul>
+                                            </li>
                                             
-                                            <li><a href="#">pages <i class="ti-angle-down"></i></a>
+                                            
+                                            <li><a href="#blog">blog <i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
-                                                    <li><a href="about.html">about</a></li>
-                                                    <li><a href="Program.html">Program</a></li>
-                                                    <li><a href="Venue.html">Venue</a></li>
-                                                    <li><a href="elements.html">elements</a></li>
+                                                    <li><a href="#blog">blog</a></li>
+                                                    <li><a href="#booking">booking</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="#">blog <i class="ti-angle-down"></i></a>
-                                                <ul class="submenu">
-                                                    <li><a href="blog.html">blog</a></li>
-                                                    <li><a href="single-blog.html">single-blog</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="contact.html">Contact</a></li>
+                                            <li><a href="#contact">Contact</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -64,7 +65,7 @@ $isLoggedIn = isset($_SESSION['user_id']);
                 </div>
             </div>
         </div>
-    </header>
+</header>
 
 
 

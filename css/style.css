@@ -543,6 +543,30 @@ header {
   cursor: pointer;
   letter-spacing: 2px;
 }
+.boxed-btn{
+  background: #0c0606;
+  /* IE6-9 */
+  color: #fff;
+  display: inline-block;
+  padding: 14px 35px;
+  font-family: "Anton", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  border: 0;
+  border: 1px solid transparent;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  text-align: center;
+  color: #fff;
+  text-transform: capitalize;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
 
 /* line 46, ../../Arafath/CL/December/236. Event-02/HTML/scss/_btn.scss */
 .boxed-btn3:hover {

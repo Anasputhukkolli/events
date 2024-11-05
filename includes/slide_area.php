@@ -40,12 +40,12 @@ if ($conn->connect_error) {
 $result = $conn->query("SELECT * FROM performers");
 ?>
 
-<div class="performar_area black_bg">
+<div id="events" class="performar_area black_bg">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="section_title mb-80">
-                    <h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">Performer</h3>
+                    <h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">Events</h3>
                 </div>
             </div>
         </div>
@@ -57,11 +57,10 @@ $result = $conn->query("SELECT * FROM performers");
                             <div class="col-lg-6 col-md-6">
                                 <div class="single_performer wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
                                     <div data-tilt class="thumb">
-                                        <img src="<?php echo htmlspecialchars($row['image']); ?>" alt="<?php echo htmlspecialchars($row['name']); ?>" style="max-width: 100%; height: auto;">
+                                        <img src="uploads/3.jpg" alt="helooo">
                                     </div>
                                     <div class="performer_heading">
                                         <h4><?php echo htmlspecialchars($row['name']); ?></h4>
-                                        <span><?php echo htmlspecialchars($row['instrument']); ?></span>
                                     </div>
                                 </div>
                             </div>

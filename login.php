@@ -62,12 +62,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login & Register - Event Management System</title>
     <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
+
+
+    <section class="bg-black" id="login">
     <div class="container">
         <div class="form-section active" id="login-section">
             <h2>Login</h2>
@@ -106,6 +111,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </form>
         </div>
     </div>
+    </section>
     <script>
         function toggleForms() {
             const loginSection = document.getElementById('login-section');
@@ -128,5 +134,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
         }
     </script>
+
+
+
 </body>
 </html>

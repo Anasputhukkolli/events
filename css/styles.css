@@ -8,3 +8,9 @@ li.user{
   position: relative;
   text-transform: uppercase;
 }
+
+
+
+.bg-black {
+  background-color: #000000; /* Pure black */
+}

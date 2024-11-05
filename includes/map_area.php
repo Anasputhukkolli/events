@@ -1,59 +1,42 @@
-<div class="map_area">
-        <div id="map" style="height: 600px; position: relative; overflow: hidden;">
-        
-        </div>
-        <script>
-            function initMap() {
-                var uluru = {
-                    lat: -25.363,
-                    lng: 131.044
-                };
-                var grayStyles = [{
-                        featureType: "all",
-                        stylers: [{
-                                saturation: -90
-                            },
-                            {
-                                lightness: 50
-                            }
-                        ]
-                    },
-                    {
-                        elementType: 'labels.text.fill',
-                        stylers: [{
-                            color: '#ccdee9'
-                        }]
-                    }
-                ];
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    center: {
-                        lat: -31.197,
-                        lng: 150.744
-                    },
-                    zoom: 9,
-                    styles: grayStyles,
-                    scrollwheel: false
-                });
-            }
-        </script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&amp;callback=initMap">
-        </script>
-        <div class="location_information black_bg wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
-            <h3>Concert 2020</h3>
-            <div class="info_wrap">
-                <div class="single_info">
-                    <span>Vanue:</span>
-                    <p>26/A, Coontum Avenu
-                        New York-2783</p>
-                </div>
-                <div class="single_info">
-                    <span>Phone:</span>
-                    <p>+10 (88) 267 368 283</p>
-                </div>
-                <div class="single_info">
-                    <span>Email:</span>
-                    <p>contact@concert20.com</p>
-                </div>
-            </div>
-        </div>
+<section class="  black_bg text_white" id="contact">
+
+
+<div class="  fadeInRight container ">
+    <article class="contact" data-page="contact">
+    <div class=" fadeInRight section_title text-center mb-60 mt-6">
+        <h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s" >CONTACT US</h3>
     </div>
+        <section class="  mapbox text-center" data-mapbox>
+            <figure >
+                <iframe
+                    src="https://maps.google.com/maps?width=684&amp;height=615&amp;hl=en&amp;q=mea engin&amp;t=k&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                    width="100%" height="300" loading="lazy" style="border:0;" allowfullscreen></iframe>
+            </figure>
+        </section>
+
+        <section class="contact-form mt-4">
+        <div class=" fadeInRight  ">
+            <h3 class="  text-white wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s" >Get in Touch</h3>
+        </div>
+            <form action="contact.php" method="POST" class="form" data-form>
+                <div class="form-row">
+                    <div class=" form-group col-md-6">
+                        <input type="text" name="fullname" class="form-control" placeholder="Full Name" required data-form-input>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="email" name="email" class="form-control" placeholder="Email Address" required data-form-input>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" class="form-control" rows="5" placeholder="Your Message" required data-form-input></textarea>
+                </div>
+
+                <button class="btn boxed-btn2  btn-block" type="submit" data-form-btn>
+                    <ion-icon name="paper-plane"></ion-icon>
+                    <span>Send Message</span>
+                </button>
+            </form>
+        </section>
+    </article>
+</div>
+</section>
